@@ -6,7 +6,6 @@
 
 Proyek ini adalah simulator interaktif berbasis web untuk mendemonstrasikan **Algebraic Reconstruction Technique (ART)**, sebuah algoritma fundamental yang digunakan dalam tomografi terkomputasi (seperti CT Scan) untuk merekonstruksi citra matriks berdasarkan proyeksi sinar-X.
 
-Aplikasi ini menggunakan **Streamlit** dan **Plotly** untuk menyajikan simulasi tomografi secara interaktif, sehingga membantu pengguna memahami proses rekonstruksi citra dengan metode ART.
 ---
 
 ## ✨ Fitur Utama
