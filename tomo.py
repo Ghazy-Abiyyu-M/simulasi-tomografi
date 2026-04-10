@@ -4,12 +4,12 @@ import plotly.express as px
 import plotly.graph_objects as go
 import time
 
-# --- KONFIGURASI HALAMAN ---
+
 st.set_page_config(page_title="Modul Pembelajaran Tomografi", layout="wide")
 
 st.title("🎯 Simulasi Rekonstruksi Tomografi Interaktif")
 
-# --- TEORI & CARA KERJA ---
+
 with st.expander("📖 Baca Dulu: Cara Kerja & Konsep Nyata (Klik untuk Buka)"):
     st.markdown("""
     ### Cara Kerja Sederhana:
@@ -27,8 +27,6 @@ with st.expander("📖 Baca Dulu: Cara Kerja & Konsep Nyata (Klik untuk Buka)"):
     Secara matematis, algoritma ART adalah pendekatan iteratif untuk menyelesaikan sistem persamaan linear:
     $Ax = b$
     """)
-
-# --- INISIALISASI STATE ---
 if 'n_size' not in st.session_state:
     st.session_state.n_size = 5
 if 'noise_level' not in st.session_state:
@@ -49,7 +47,7 @@ def generate_data():
 if 'phantom' not in st.session_state:
     generate_data()
 
-# --- SIDEBAR KONTROL ---
+
 with st.sidebar:
     st.header("⚙️ Pengaturan Sistem")
     st.number_input("Ukuran Matriks (n)", min_value=2, max_value=20, key="n_size", on_change=generate_data)
@@ -58,7 +56,6 @@ with st.sidebar:
     if st.button("🔄 Buat Data Baru (Reset)", use_container_width=True):
         generate_data()
 
-# --- LOGIKA ART ---
 def run_art(steps):
     n = st.session_state.n_size
     lam = st.session_state.lam
@@ -79,7 +76,6 @@ def run_art(steps):
         
     st.session_state.matrix = mat
 
-# --- DASHBOARD METRICS ---
 col1, col2, col3 = st.columns(3)
 col1.metric("Iterasi Saat Ini", st.session_state.iteration)
 col2.metric("Resolusi Matriks", f"{st.session_state.n_size} x {st.session_state.n_size}")
@@ -99,7 +95,6 @@ else:
 
 st.divider()
 
-# --- TOMBOL KONTROL & AUTO PLAY ---
 btn1, btn2, btn3, btn4 = st.columns(4)
 if btn1.button("▶️ 1 Iterasi", use_container_width=True): run_art(1)
 if btn2.button("⏩ 10 Iterasi", use_container_width=True): run_art(10)
@@ -113,7 +108,6 @@ if btn4.button("🎬 Animasi Auto-Play", use_container_width=True):
 
 st.write("")
 
-# --- VISUALISASI LENGKAP (6 TABS) ---
 tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "👁️ Perbandingan Citra", 
     "📊 Data Sensor", 
@@ -195,7 +189,6 @@ with tab6:
         st.write(f"- Faktor Relaksasi ($\lambda$): **{lam}**")
         st.info(f"Nilai penambahan untuk setiap sel: ({lam} × {error_val:.2f}) / {n} = **{koreksi_val:.2f}**")
 
-# --- FOOTER ---
 st.markdown("---")
 st.markdown(
     """
