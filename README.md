@@ -35,8 +35,8 @@ Anda memiliki kontrol penuh atas variabel lingkungan tomografi:
 ## 🚀 Cara Menjalankan Secara Lokal
 
 Jika Anda ingin menjalankan atau memodifikasi kode ini di komputer Anda sendiri:
-
-```1. Clone Repositori
+```
+1. Clone Repositori
 bash
 git clone https://github.com/Ghazy-Abiyyu-M/simulasi-tomografi.git
 cd simulasi-tomografi
