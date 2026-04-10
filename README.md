@@ -37,18 +37,18 @@ Anda memiliki kontrol penuh atas variabel lingkungan tomografi:
 Jika Anda ingin menjalankan atau memodifikasi kode ini di komputer Anda sendiri:
 
 **1. Clone Repositori**
-bash
-git clone [https://github.com/Ghazy-Abiyyu-M/simulasi-tomografi.git](https://github.com/Ghazy-Abiyyu-M/simulasi-tomografi.git)
-cd simulasi-tomografi
+'''bash
+'''git clone [https://github.com/Ghazy-Abiyyu-M/simulasi-tomografi.git](https://github.com/Ghazy-Abiyyu-M/simulasi-tomografi.git)
+'''cd simulasi-tomografi
 **2. Instal Dependensi**
 Pastikan Anda sudah menginstal Python. Disarankan menggunakan virtual environment.
 
-Bash
-pip install -r requirements.txt
+'''Bash
+'''pip install -r requirements.txt
 **3. Jalankan Aplikasi**
 
-Bash
-streamlit run tomo.py
+'''Bash
+'''streamlit run tomo.py
 Aplikasi akan secara otomatis terbuka di browser Anda pada alamat http://localhost:8501.
 
 📖 Konsep Dasar Matematis
