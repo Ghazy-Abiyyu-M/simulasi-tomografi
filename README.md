@@ -37,7 +37,7 @@ Anda memiliki kontrol penuh atas variabel lingkungan tomografi:
 Jika Anda ingin menjalankan atau memodifikasi kode ini di komputer Anda sendiri:
 
 **1. Clone Repositori**
-```bash
+bash
 git clone [https://github.com/Ghazy-Abiyyu-M/simulasi-tomografi.git](https://github.com/Ghazy-Abiyyu-M/simulasi-tomografi.git)
 cd simulasi-tomografi
 2. Instal Dependensi
@@ -53,8 +53,3 @@ Aplikasi akan secara otomatis terbuka di browser Anda pada alamat http://localho
 
 📖 Konsep Dasar Matematis
 Algoritma ART bekerja secara iteratif untuk menyelesaikan sistem persamaan linear besar (Ax = b). Pada setiap langkah iterasi, nilai setiap sel (piksel) diperbarui menggunakan rumus koreksi, di mana selisih antara target pembacaan sensor dan jumlah nilai saat ini didistribusikan secara merata ke seluruh sel yang dilewati oleh sinar tersebut.
-
-
-<p align="center">
-<i>Dibuat untuk mempermudah pemahaman teknik tomografi.</i> ⚛️
-</p>
