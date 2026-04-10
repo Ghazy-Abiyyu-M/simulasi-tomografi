@@ -36,20 +36,13 @@ Anda memiliki kontrol penuh atas variabel lingkungan tomografi:
 
 Jika Anda ingin menjalankan atau memodifikasi kode ini di komputer Anda sendiri:
 
-**1. Clone Repositori**
-'''bash
-'''git clone [https://github.com/Ghazy-Abiyyu-M/simulasi-tomografi.git](https://github.com/Ghazy-Abiyyu-M/simulasi-tomografi.git)
-'''cd simulasi-tomografi
-**2. Instal Dependensi**
-Pastikan Anda sudah menginstal Python. Disarankan menggunakan virtual environment.
-
-'''Bash
-'''pip install -r requirements.txt
-**3. Jalankan Aplikasi**
-
-'''Bash
-'''streamlit run tomo.py
-Aplikasi akan secara otomatis terbuka di browser Anda pada alamat http://localhost:8501.
+```1. Clone Repositori
+bash
+git clone https://github.com/Ghazy-Abiyyu-M/simulasi-tomografi.git
+cd simulasi-tomografi
+2. Instal DependensiPastikan Anda sudah menginstal Python. Disarankan menggunakan virtual environment.Bashpip install -r requirements.txt
+3. Jalankan AplikasiBashstreamlit run tomo.py
+Aplikasi akan secara otomatis terbuka di browser Anda pada alamat http://localhost:8501.📖 Konsep Dasar MatematisAlgoritma ART bekerja secara iteratif untuk menyelesaikan sistem persamaan linear besar ($Ax = b$). Pada setiap langkah iterasi, nilai setiap sel (piksel) diperbarui menggunakan rumus koreksi, di mana selisih antara target pembacaan sensor dan jumlah nilai saat ini didistribusikan secara merata ke seluruh sel yang dilewati oleh sinar tersebut.
 
 📖 Konsep Dasar Matematis
 Algoritma ART bekerja secara iteratif untuk menyelesaikan sistem persamaan linear besar (Ax = b). Pada setiap langkah iterasi, nilai setiap sel (piksel) diperbarui menggunakan rumus koreksi, di mana selisih antara target pembacaan sensor dan jumlah nilai saat ini didistribusikan secara merata ke seluruh sel yang dilewati oleh sinar tersebut.
