@@ -40,12 +40,12 @@ Jika Anda ingin menjalankan atau memodifikasi kode ini di komputer Anda sendiri:
 bash
 git clone [https://github.com/Ghazy-Abiyyu-M/simulasi-tomografi.git](https://github.com/Ghazy-Abiyyu-M/simulasi-tomografi.git)
 cd simulasi-tomografi
-2. Instal Dependensi
+**2. Instal Dependensi**
 Pastikan Anda sudah menginstal Python. Disarankan menggunakan virtual environment.
 
 Bash
 pip install -r requirements.txt
-3. Jalankan Aplikasi
+**3. Jalankan Aplikasi**
 
 Bash
 streamlit run tomo.py
