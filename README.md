@@ -43,9 +43,7 @@ cd simulasi-tomografi
 2. Instal DependensiPastikan Anda sudah menginstal Python. Disarankan menggunakan virtual environment.Bashpip install -r requirements.txt
 3. Jalankan AplikasiBashstreamlit run tomo.py
 ```
-Aplikasi akan secara otomatis terbuka di browser Anda pada alamat http://localhost:8501.📖
+Aplikasi akan secara otomatis terbuka di browser Anda pada alamat http://localhost:8501.
 
-Konsep Dasar MatematisAlgoritma ART bekerja secara iteratif untuk menyelesaikan sistem persamaan linear besar ($Ax = b$). Pada setiap langkah iterasi, nilai setiap sel (piksel) diperbarui menggunakan rumus koreksi, di mana selisih antara target pembacaan sensor dan jumlah nilai saat ini didistribusikan secara merata ke seluruh sel yang dilewati oleh sinar tersebut.
+📖Konsep Dasar Matematis Algoritma ART bekerja secara iteratif untuk menyelesaikan sistem persamaan linear besar ($Ax = b$). Pada setiap langkah iterasi, nilai setiap sel (piksel) diperbarui menggunakan rumus koreksi, di mana selisih antara target pembacaan sensor dan jumlah nilai saat ini didistribusikan secara merata ke seluruh sel yang dilewati oleh sinar tersebut.
 
-📖 Konsep Dasar Matematis
-Algoritma ART bekerja secara iteratif untuk menyelesaikan sistem persamaan linear besar (Ax = b). Pada setiap langkah iterasi, nilai setiap sel (piksel) diperbarui menggunakan rumus koreksi, di mana selisih antara target pembacaan sensor dan jumlah nilai saat ini didistribusikan secara merata ke seluruh sel yang dilewati oleh sinar tersebut.
