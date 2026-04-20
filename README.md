@@ -21,7 +21,7 @@ Simulator ini menawarkan pengalaman belajar yang komprehensif melalui 6 tab inte
 
 ---
 
-## 🛠️ Panel Kendali Simulasi
+## 🛠️ Panel Simulasi
 
 Anda memiliki kontrol penuh atas variabel lingkungan tomografi:
 * **Resolusi Matriks (n x n):** Ubah ukuran dari 2x2 (untuk perhitungan manual) hingga 20x20 (untuk simulasi citra kompleks).
